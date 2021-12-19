@@ -1,0 +1,1 @@
+It's CV project at the Rolling Scopes School.
