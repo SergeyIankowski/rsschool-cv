@@ -31,6 +31,33 @@ I worked as a civil engineer last 5 years. I realized that I wanted to find a ne
 + VS Code
 ## Code
 
+```
+let age = +prompt("Enter your age!");
+let checkAge = value => {
+    if (value < 18) {
+
+        return false
+
+    } else {
+
+        return true
+    }
+};
+let messege = (checkAge(age)) ? "access is allowed" : "Access denied";
+alert(messege);
+
+```
+
 ## Education
 
-## English level
++ December 2021 - Februar 2022; Programming in Front-End JavaScript  Stage#0 courses at the Rolling Scopes School
+
++ Minsk, Belarusian National Technical University,<br>Civil engineering Faculty,<br>Industrial and civil construction,<br>2010-2015
+
+## Languages
+
++ Russian (Native speaker)
+
++ English (A2)
+
++ German (B1)
