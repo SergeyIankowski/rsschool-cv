@@ -47,12 +47,11 @@ let messege = (checkAge(age)) ? "access is allowed" : "Access denied";
 alert(messege);
 
 ```
-
 ## Education
 
 + December 2021 - Februar 2022; Programming in Front-End JavaScript  Stage#0 courses at the Rolling Scopes School
 
-+ Minsk, Belarusian National Technical University,<br>Civil engineering Faculty,<br>Industrial and civil construction,<br>2010-2015
++ Minsk, Belarusian National Technical University,<br>Civil engineering Faculty,<br>Industrial and civil construction,<br>2010 - 2015
 
 ## Languages
 
