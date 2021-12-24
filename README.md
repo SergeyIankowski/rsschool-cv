@@ -2,4 +2,4 @@
 
 It's CV project at the Rolling Scopes School.
 
-## My CV deploy: https://sergeyiankowski.github.io/rsschool-cv/
+## My CV deploy: https://sergeyiankowski.github.io/rsschool-cv/cv
