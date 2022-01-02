@@ -36,32 +36,41 @@ body {
     flex-direction: column;
 }
 
-#header-description-h1, #contacts-h2, #skills-h2 {
-    align-self: center;
+.header .skills ul li {
+    justify-content: space-between;
 }
 
-.header ul {
+#header-description-h1, #contacts-h2, #skills-h2{
+    align-self: center;
+}
+h1 {
+    margin-bottom: 0.5rem;
+}
+#profession {
+    align-self: center;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+.header section ul {
     list-style-type: none;
 }
 
-.header ul a {
+.header section ul a {
     text-decoration: none;
     color: darkgreen;
 }
 
-.header ul a:hover {
+.header section ul a:hover {
     text-decoration: underline;
 }
-
-.header ul {
-    width: 70%;
+.header section ul li {
     margin-right: 1rem;
 }
-.header ul li {
+.header section ul li {
     display: flex;
 }
 
-.header #skills-main li {
+.header .skills #skills-main li {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -97,7 +106,7 @@ body {
 .image-box {
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(47.35deg, #e2f3f9 50%, #59a9b5 50%);
+    background-image: linear-gradient(50deg, #e2f3f9 50%, #59a9b5 50%);
 
     display: flex;
     justify-content: center;
