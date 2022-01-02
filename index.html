@@ -12,51 +12,103 @@
 <body>
     <header class="header">
         <div class="image-box">
-            <img class="image-box-portrait" src="Portrait_for_CV_250px.png" alt="My CV Portrait" />
+            <img class="image-box-portrait" srcset="
+            images/Portrait_for_CV_200px.png 200w,
+            images/Portrait_for_CV_250px.png 250w
+            " sizes="
+            (max-width: 500px) 190px,
+            240px"
+            src="images/Portrait_for_CV_250px.png" alt="My CV Portrait" />
         </div>
 
-        <h1 class="header-description" id="header-description-h1"><span id="sergei">SERGEY</span><span id="iankowski">IANKOWSKI</span></h1>
+        <h1 class="header-description" id="header-description-h1"><span id="sergei">SERGEY</span><span
+                id="iankowski">IANKOWSKI</span></h1>
 
-        <h2 class="header-description" id="header-description-contacts-h2">CONTACTS</h2>
+        <h2 class="header-description" id="contacts-h2">CONTACTS</h2>
 
-        <ul class="header-description" id="header-description-contacts-main">
+        <ul class="header-description" id="contacts-main">
             <li>
-                <p>Location: Minsk, Belarus</p>
+                <img src="icons/icon-location.svg" alt="">
+                <p>Minsk, Belarus</p>
             </li>
             <li>
-                <p>Phone: +37297749222</p>
+                <img src="icons/icon-phone.svg" alt="phone icon">
+                <p>+37297749222</p>
             </li>
             <li>
-                <p>Email:<br>sergeyiankowski@gmail.com</p>
+                <img src="icons/icon-email.svg" alt="location icon">
+                <p>sergeyiankowski@gmail.com</p>
             </li>
             <li>
-                <p>Discord: Garret#2389</p>
+                <img src="icons/icon-discord.svg" alt="discord icon">
+                <p>Garret#2389</p>
             </li>
             <li>
-                <p>Telegram: <b>@Garret933</b></p>
+                <img src="icons/icon-telegram.svg" alt="telegram icon">
+                <p>@Garret933</p>
             </li>
             <li>
+                <img src="icons/icon-github.svg" alt="github icon">
                 <p><a href="https://github.com/sergeyIankowski">My Github</a></p>
             </li>
             <li>
+                <img src="icons/icon-linkedin.svg" alt="linkedin icon">
                 <p><a href="https://www.linkedin.com/in/sergeyiankowski/">LinkedIn</a></p>
             </li>
         </ul>
 
-        <h2 class="header-description" id="header-description-skills-h2">SKILLS</h2>
+        <h2 class="header-description" id="skills-h2">SKILLS</h2>
 
-        <ul class="header-description" id="header-description-skills-main">
+        <ul class="header-description" id="skills-main">
             <li>
-                <p>HTML5, CSS3</p>
+                <p>HTML5</p>
+                <div>
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                </div>
+            </li>
+            <li>
+                <p>CSS</p>
+                <div>
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                </div>
             </li>
             <li>
                 <p>Git, GitHub</p>
+                <div>
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                </div>
             </li>
             <li>
-                <p>JavaScript(Basics)</p>
+                <p>JavaScript</p>
+                <div>
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                </div>
             </li>
             <li>
                 <p>VS Code</p>
+                <div>
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                    <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                </div>
             </li>
         </ul>
 
@@ -75,35 +127,35 @@
             </nav>
         </aside>
 
-        <h2 class="main-description" id="main-description-about-me-h2">ABOUT</h2>
+        <h2 class="main-description" id="about-me-h2">ABOUT</h2>
 
-        <p class="main-description" id="main-description-about-me-main">I have good interpersonal skills and am good
+        <p class="main-description" id="about-me-main">I have good interpersonal skills and am good
             working in group. I like learn and
             discover new engineering
             solutions. I worked as a civil engineer last 5 years. I realized that I wanted to find a new field of work.
             Front-end development has become interesting to me. My goal is to progress and work in Front-End development
             direction.</p>
 
-        <h2 class="main-description" id="main-description-education-h2">EDUCATION</h2>
+        <h2 class="main-description" id="education-h2">EDUCATION</h2>
 
-        <ul class="main-description" id="main-description-education-main">
+        <ul class="main-description" id="education-main">
             <li>
-                <p class="date"><time datetime="2021-12">December 2021</time> - <time datetime="2022-02">Februar
+                <p id="date"><time datetime="2021-12">December 2021</time> - <time datetime="2022-02">Februar
                         2022</time></p>
-                <p>Programming in Front-End JavaScript Stage#0 courses<br> at the Rolling
+                <p id="description">Programming in Front-End JavaScript Stage#0 courses<br> at the Rolling
                     Scopes online school</p>
             </li>
             <li>
-                <p class="date"><time datetime="2010">2010</time> - <time datetime="2015">2015</time></p>
-                <p>Minsk, Belarusian National Technical University,<br>Civil engineering Faculty,<br>Industrial and
+                <p id="date"><time datetime="2010">2010</time> - <time datetime="2015">2015</time></p>
+                <p id="description">Minsk, Belarusian National Technical University,<br>Civil engineering Faculty,<br>Industrial and
                     civil
                     construction</p>
             </li>
         </ul>
 
-        <h2 class="main-description" id="main-description-code-h2">CODE</h2>
+        <h2 class="main-description" id="code-h2">CODE</h2>
 
-        <pre class="main-description" id="main-description-code-main"><code>let age = +prompt(&quot;Enter your age!&quot;);
+        <pre class="main-description" id="code-main"><code>let age = +prompt(&quot;Enter your age!&quot;);
 let checkAge = value =&gt; {
     if (value &lt; 18) {
 
@@ -114,20 +166,18 @@ let checkAge = value =&gt; {
         return true
     }
 };
-let messege = (checkAge(age)) ? 
-&quot;access is allowed&quot; :
-&quot;Access denied&quot;;
+let messege = (checkAge(age)) ? &quot;access is allowed&quot; : &quot;Access denied&quot;;
 alert(messege);
 </code></pre>
 
-        <h2 class="main-description" id="main-description-languages-h2">LANGUAGES</h2>
+        <h2 class="main-description" id="languages-h2">LANGUAGES</h2>
 
-        <ul class="main-description" id="main-description-languades-main">
+        <ul class="main-description" id="languades-main">
             <li>
                 <p>Russian - Native speaker</p>
             </li>
             <li>
-                <p>English - A2 (in progress...)</p>
+                <p>English - A1 (in progress...)</p>
             </li>
             <li>
                 <p>German (B1)</p>
