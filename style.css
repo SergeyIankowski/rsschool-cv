@@ -31,8 +31,12 @@ body {
     color: lightcyan;
  
 }
+.header section {
+    display: flex;
+    flex-direction: column;
+}
 
-.header h1, .header h2 {
+#header-description-h1, #contacts-h2, #skills-h2 {
     align-self: center;
 }
 
@@ -111,15 +115,13 @@ body {
     box-shadow: 0 0 5px #e2f3f9;
     overflow: auto;
 }
-#education-main #description {
+#education-main .description {
     margin: 0.5rem;
 }
-#education-main #date {
+#education-main .date {
     margin-bottom: 0.5rem;
 }
-#site-navigation-button {
-    display: none;
-}
+
 #nav {
     border-bottom: 2px solid lightcyan;
 }
