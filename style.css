@@ -127,7 +127,8 @@ align-items: flex-end;
     overflow: auto;
 }
 #education-main .description {
-    margin: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 #education-main .date {
     margin-bottom: 0.5rem;
@@ -171,6 +172,9 @@ footer p a:hover {
 footer p {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+footer p img {
+    max-height: 54px;
 }
 
 @media (max-width: 840px) {
