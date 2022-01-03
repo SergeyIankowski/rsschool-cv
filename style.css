@@ -4,7 +4,7 @@ body {
 .info {
 
     font-family: 'Montserrat', sans-serif;
-
+    
     display: flex;
     
     align-items: stretch;
@@ -150,6 +150,8 @@ align-items: flex-end;
     color: lightcyan;
 }
 footer {
+align-self: stretch;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -157,6 +159,7 @@ footer {
     background-color: #e2f3f9;
     max-width: 65.3rem;
     margin: 0 auto;
+    
 }
 footer p a {
     text-decoration: none;
@@ -191,8 +194,7 @@ footer p {
         }
     .main {
         text-align: start;
-    }
-    .main section ul {
+    }    .main section ul {
         padding-left: 0;
     }
     .description {
