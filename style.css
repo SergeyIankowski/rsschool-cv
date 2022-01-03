@@ -36,10 +36,6 @@ body {
     flex-direction: column;
 }
 
-.header .skills ul li {
-    justify-content: space-between;
-}
-
 #header-description-h1, #contacts-h2, #skills-h2{
     align-self: center;
 }
@@ -69,10 +65,12 @@ h1 {
 .header section ul li {
     display: flex;
 }
-
+.header .contacts #contacts-main li {
+align-items: flex-end;
+}
 .header .skills #skills-main li {
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
