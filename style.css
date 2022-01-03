@@ -174,7 +174,7 @@ footer p {
     margin-right: 1rem;
 }
 footer p img {
-    max-height: 54px;
+    height: 44px;
 }
 
 @media (max-width: 840px) {
