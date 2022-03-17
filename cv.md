@@ -57,6 +57,6 @@ alert(messege);
 
 + Russian (Native speaker)
 
-+ English (A2)
++ English (A1)
 
 + German (B1)
