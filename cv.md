@@ -1,4 +1,4 @@
-![My CV Portrait](Portrait_for_CV_200px.png)
+![My CV Portrait](images/Portrait_for_CV_200px.png)
 # Sergei Iankowski
 ## My contacts info:
 
