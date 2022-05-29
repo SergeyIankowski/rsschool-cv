@@ -1,0 +1,13 @@
+@media (max-width: 640px) {
+    .main {
+        background-color: $bg-color-light;
+        .wrapper {
+            flex-direction: column;
+        }
+        font-size: 1.3rem;
+    }
+    .column__left {
+        margin: 0 auto;
+        width: 320px;
+    }
+}

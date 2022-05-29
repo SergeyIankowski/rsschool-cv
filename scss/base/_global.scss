@@ -1,0 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: GhostWhite;
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto;
+}
+.ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.link {
+    color: $text-color-light;
+    text-decoration: none;
+}
+.link_dark {
+    color: $text-color-dark;
+}
+a:hover {
+    text-decoration: underline;
+}

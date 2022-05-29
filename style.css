@@ -1,210 +1,201 @@
-body {
-    background-color: GhostWhite;
+html {
+  scroll-behavior: smooth;
 }
-.info {
 
-    font-family: 'Montserrat', sans-serif;
-    
-    display: flex;
-    
-    align-items: stretch;
-    justify-content: center;
+body {
+  background-color: GhostWhite;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.link {
+  color: #E4EBFA;
+  text-decoration: none;
+}
+
+.link_dark {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Roboto", "Montserrat", sans-serif;
 }
 
 .header {
-    background-color: #e2f3f9;
+  font-size: 1.3rem;
+}
+.header .wrapper {
+  position: relative;
+}
 
- /*   box-shadow: 3px 3px 5px black; */
-    display: flex;
-    flex-direction: column;
-    align-items: first baseline;
-    
+.header__navigation {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.header__navigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-end;
+  margin: 0;
 }
 
 .main {
-    background-color: #59a9b5;
-
- /*   box-shadow: 4px 4px 7px black; */
-    text-align: end;
-    
-    flex-shrink: 1;
-    min-width: 14rem;
-    max-width: 45rem;
-
-    font-size: 1.2em;
-    color: lightcyan;
- 
+  font-size: 1.3rem;
 }
-.header section {
-    display: flex;
-    flex-direction: column;
+.main .wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
-#header-description-h1, #contacts-h2, #skills-h2{
-    align-self: center;
+.column__right {
+  text-align: end;
+  padding: 40px 20px 20px 50px;
+  background-color: #59a9b5;
+  color: #E4EBFA;
 }
-h1 {
-    margin-bottom: 0.5rem;
-}
-#profession {
-    align-self: center;
-    font-size: 1.1em;
-    margin-top: 0;
-}
-.header section ul {
-    list-style-type: none;
+.column__right h2 {
+  border-bottom: 2px solid #E4EBFA;
 }
 
-.header section ul a {
-    text-decoration: none;
-    color: darkgreen;
+.column__left {
+  position: relative;
+  padding: 20px;
+  background-color: #E2F3F9;
+  text-align: center;
+  width: 320px;
 }
 
-.header section ul a:hover {
-    text-decoration: underline;
-}
-.header section ul li {
-    margin-right: 1rem;
-}
-.header section ul li {
-    display: flex;
-}
-.header .contacts #contacts-main li {
-align-items: flex-end;
-}
-.header .skills #skills-main li {
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+.column__left::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 320px solid #59a9b5;
+  border-bottom: 320px solid transparent;
 }
 
-.header #skills-main li p, img {
-    margin: 1rem 0;
-}
-.header #skills-main li div {
-    display: flex;
-    flex-flow: row nowrap;
-    }
-#header-description-h1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    
+.code__description {
+  background-color: #E2F3F9;
+  color: #000000;
+  text-align: start;
+  overflow: auto;
+  box-shadow: 0 0 5px #e2f3f9;
 }
 
-.main ul {
-    list-style-type: none;
+.contacts__main li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.contacts__main li p {
+  margin: 0;
+}
+.contacts__main li a {
+  color: #000000;
 }
 
-.main-description {
-    margin: 2.5rem 2rem 0.5rem 2rem;
-}
-
-#about-me-main, #education-main, #code-main, #languages-main {
-    margin-top: 0.5rem;
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 .image-box {
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(50deg, #e2f3f9 50%, #59a9b5 50%);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  margin: 20px;
+}
+.image-box img {
+  z-index: 2;
+  position: relative;
+  top: 30px;
+  right: 30px;
 }
 
-#nav nav ul li {
-    display:inline-block;
+.image-box::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  border-left: 115px solid #E2F3F9;
+  border-top: 115px solid transparent;
+  z-index: 3;
 }
 
-#code-main {
-    background-color: #e2f3f9;
-    color: black;
-    text-align: left;
-    box-shadow: 0 0 5px #e2f3f9;
-    overflow: auto;
-}
-#education-main .description {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-#education-main .date {
-    margin-bottom: 0.5rem;
+.image-box::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 310px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #438797;
+  z-index: 1;
 }
 
-#nav {
-    border-bottom: 2px solid lightcyan;
-}
-#nav nav ul {
-    display: flex;
-    justify-content: space-between;
-
-}
-#nav ul li a {
-    text-decoration: none;
-    color: lightcyan;
-}
-#nav nav ul li a:hover {
-    text-decoration: underline;
-    color: lightcyan;
-}
-footer {
-align-self: stretch;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #e2f3f9;
-    max-width: 65.3rem;
-    margin: 0 auto;
-    
-}
-footer p a {
-    text-decoration: none;
-    color:darkgreen;
-}
-footer p a:hover {
-    text-decoration: underline;
-}
-footer p {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-footer p img {
-    height: 44px;
+.self-info__header {
+  margin-top: 50px;
 }
 
-@media (max-width: 840px) {
-    #nav {
-        display: none;
-    }
+.footer {
+  font-size: 1.3rem;
 }
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E2F3F9;
+  padding: 0 20px;
+}
+
+.rss-logo {
+  width: 200px;
+  height: auto;
+}
+
 @media (max-width: 640px) {
+  .main {
+    background-color: #E2F3F9;
+    font-size: 1.3rem;
+  }
+  .main .wrapper {
+    flex-direction: column;
+  }
 
-    .info {
-        
-            font-family: 'Montserrat', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: stretch;
-            justify-content: flex-start;
-        }
-    
-    .image-box {
-            background-image: none;
-        }
-    .main {
-        text-align: start;
-    }    .main section ul {
-        padding-left: 0;
-    }
-    .description {
-        margin-left: 0;
-    }
-    footer {
-        flex-direction: column;
-    }
+  .column__left {
+    margin: 0 auto;
+    width: 320px;
+  }
 }
+@media (max-width: 1279px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
