@@ -71,4 +71,8 @@ const hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('hamburger_active');
+  const overlay = document.createElement('div');
+  overlay.classList.add('overlay');
+  document.body.prepend(overlay);
+  
 })
