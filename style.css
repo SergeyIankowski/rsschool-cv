@@ -186,6 +186,12 @@ body {
   transform: rotate(90deg);
 }
 
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .footer {
   font-size: 1.3rem;
 }
@@ -243,6 +249,11 @@ body {
 @media (max-width: 1279px) {
   .wrapper {
     width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
   }
 }
 

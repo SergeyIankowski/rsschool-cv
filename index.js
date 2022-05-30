@@ -40,7 +40,7 @@ Front-end development has become interesting to me. My goal is to progress and w
 development
 direction.`;
 
-writeTextInTag(ABOUT_ME, ABOUT_ME_TEXT, 25);
+writeTextInTag(ABOUT_ME, ABOUT_ME_TEXT, 15);
 
 
 const DATE = document.getElementsByClassName('date');
@@ -49,7 +49,6 @@ Rolling Scopes online school`];
 const DATE_TEXT_SECOND = [`2010 - 2015`, `Minsk, Belarusian National Technical University,`, `Civil engineering
 Faculty,`, `Industrial and
 civil construction`];
-console.log(DATE);
 
 DATE_TEXT_FIRST.forEach(text => {
   const node = createAndPutNode('p', DATE[0], 'education__description');
@@ -60,5 +59,16 @@ DATE_TEXT_SECOND.forEach(text => {
   writeTextInTag(node, text, 35);
 });
 
-// writeTextInTag(DATE[0], DATE_TEXT_FIRST, 35);
-// writeTextInTag(DATE[1], DATE_TEXT_SECOND, 35);
+const LANGUAGES_CONTAINER = document.querySelector('.languages__list')
+const LANGUAGES_TEXT = [`Russian - Native speaker`, `English - A1 (in progress...)`, `German (B1)`];
+
+LANGUAGES_TEXT.forEach(text => {
+  const node = createAndPutNode('li', LANGUAGES_CONTAINER);
+  writeTextInTag(node, text, 35);
+});
+
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('hamburger_active');
+})

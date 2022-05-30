@@ -108,3 +108,8 @@
 .hamburger_active {
     transform: rotate(90deg);
 }
+.languages__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
