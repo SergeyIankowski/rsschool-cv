@@ -16,7 +16,7 @@
     h2 {
         border-bottom: 2px solid $text-color-light;
     }
-
+    width: 1280px;
 }
 .column__left {
     position: relative;
@@ -41,8 +41,10 @@
     background-color: $bg-color-light;
     color: $text-color-dark;
     text-align: start;
-    overflow: auto;
     box-shadow: 0 0 5px #e2f3f9;
+    code {
+        overflow: auto;
+    }
 }
 .contacts__main {
     li {
@@ -94,10 +96,15 @@
     top: 0;
     right: 0;
     background-color: #438797;
-    // border-right: 150px solid #438797;
-    // border-bottom: 150px solid transparent;
     z-index: 1;
 }
 .self-info__header {
     margin-top: 50px;
+}
+.education__description {
+    margin: 0;
+}
+
+.hamburger_active {
+    transform: rotate(90deg);
 }

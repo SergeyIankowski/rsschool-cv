@@ -10,4 +10,15 @@
         margin: 0 auto;
         width: 320px;
     }
+    .image-box {
+        img {
+            right: 20px;
+        }
+    }
+    .column__left::before {
+        display: none;
+    }
+    .column__right {
+        width: auto;
+    }
 }
