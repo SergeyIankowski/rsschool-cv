@@ -40,7 +40,7 @@ Front-end development has become interesting to me. My goal is to progress and w
 development
 direction.`;
 
-writeTextInTag(ABOUT_ME, ABOUT_ME_TEXT, 15);
+writeTextInTag(ABOUT_ME, ABOUT_ME_TEXT, 35);
 
 
 const DATE = document.getElementsByClassName('date');
@@ -71,8 +71,12 @@ const hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('hamburger_active');
+  hamburger.classList.toggle('header-container_active');
+  if(document.querySelector('.overlay')) {
+    document.querySelector('.overlay').remove();
+  } else {
   const overlay = document.createElement('div');
   overlay.classList.add('overlay');
   document.body.prepend(overlay);
-  
+  }
 })

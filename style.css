@@ -1,3 +1,19 @@
+@keyframes slide-on {
+  from {
+    right: -330px;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes slide-off {
+  from {
+    right: 0;
+  }
+  to {
+    right: -330px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -87,6 +103,7 @@ body {
   width: 1280px;
 }
 .column__right h2 {
+  text-align: end;
   border-bottom: 2px solid #E4EBFA;
 }
 
@@ -234,6 +251,20 @@ body {
   }
 }
 @media (max-width: 640px) {
+  .header-container {
+    position: absolute;
+    top: 0;
+    z-index: 4;
+  }
+
+  .header-container_active {
+    animation: slide-on 3s ease-in 0 forwards;
+  }
+
+  .header__navigation ul {
+    flex-direction: column;
+  }
+
   .main {
     background-color: #E2F3F9;
     font-size: 1.3rem;

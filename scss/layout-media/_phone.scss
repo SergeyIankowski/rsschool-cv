@@ -1,4 +1,17 @@
 @media (max-width: 640px) {
+    .header-container {
+        position: absolute;
+        top: 0;
+        z-index: 4;
+    }
+    .header-container_active {
+        animation: slide-on 3s ease-in 0 forwards;
+    }
+    .header__navigation {
+        ul {
+            flex-direction: column;
+        }
+    }
     .main {
         background-color: $bg-color-light;
         .wrapper {

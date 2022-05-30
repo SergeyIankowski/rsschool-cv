@@ -1,0 +1,8 @@
+@keyframes slide-on {
+    from {right: -330px;}
+    to {right: 0;}
+}
+@keyframes slide-off {
+    from {right: 0;}
+    to {right: -330px;}
+}
