@@ -1,5 +1,6 @@
 function writeTextInTag(tag, text, speed, indexOfLetter = 0) {
 
+  // Calculate and past section height
 
   if (tag.innerHTML === '') {
     tag.innerHTML = text;
@@ -8,6 +9,8 @@ function writeTextInTag(tag, text, speed, indexOfLetter = 0) {
     tag.innerHTML = '';
 
   }
+
+  // Write text
 
   if (indexOfLetter < text.length) {
     tag.innerHTML += text[indexOfLetter];
@@ -67,16 +70,24 @@ LANGUAGES_TEXT.forEach(text => {
   writeTextInTag(node, text, 35);
 });
 
+
+const showOverlay = () => {
+  if (document.querySelector('.overlay')) {
+    document.querySelector('.overlay').remove();
+  } else {
+    const overlay = document.createElement('div');
+    overlay.classList.add('overlay');
+    document.body.prepend(overlay);
+  }
+}
 const hamburger = document.querySelector('.hamburger');
+const HEADER_NAVIGATION = document.querySelector('.header__navigation');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('hamburger_active');
-  hamburger.classList.toggle('header-container_active');
-  if(document.querySelector('.overlay')) {
-    document.querySelector('.overlay').remove();
-  } else {
-  const overlay = document.createElement('div');
-  overlay.classList.add('overlay');
-  document.body.prepend(overlay);
-  }
+  hamburger.classList.toggle('hamburger_unactive');
+  HEADER_NAVIGATION.classList.toggle('header__navigation_active');
+  HEADER_NAVIGATION.classList.toggle('header__navigation_unactive');
+  
+  showOverlay();
 })
