@@ -313,6 +313,7 @@ body {
   .column__right {
     width: auto;
     overflow: hidden;
+    padding: 20px 40px;
   }
 
   .image-box::before {

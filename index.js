@@ -70,24 +70,29 @@ LANGUAGES_TEXT.forEach(text => {
   writeTextInTag(node, text, 35);
 });
 
-
-const showOverlay = () => {
+function showOverlay() {
   if (document.querySelector('.overlay')) {
     document.querySelector('.overlay').remove();
   } else {
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
+    overlay.addEventListener('click', showSlideMenu);
     document.body.prepend(overlay);
+    
   }
 }
-const hamburger = document.querySelector('.hamburger');
-const HEADER_NAVIGATION = document.querySelector('.header__navigation');
-
-hamburger.addEventListener('click', () => {
+function showSlideMenu() {
   hamburger.classList.toggle('hamburger_active');
   hamburger.classList.toggle('hamburger_unactive');
   HEADER_NAVIGATION.classList.toggle('header__navigation_active');
   HEADER_NAVIGATION.classList.toggle('header__navigation_unactive');
-  
   showOverlay();
-})
+}
+
+const hamburger = document.querySelector('.hamburger');
+const HEADER_NAVIGATION = document.querySelector('.header__navigation');
+const NAVIGATION_LINKS = document.querySelectorAll('.nav__link');
+
+hamburger.addEventListener('click', showSlideMenu);
+NAVIGATION_LINKS.forEach(link => link.addEventListener('click', showSlideMenu));
+
