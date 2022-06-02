@@ -30,7 +30,7 @@ body {
 }
 
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -104,7 +104,7 @@ body {
   padding: 40px 20px 20px 50px;
   background-color: #59a9b5;
   color: #E4EBFA;
-  width: 1280px;
+  width: 960px;
 }
 .column__right h2 {
   text-align: end;
@@ -134,10 +134,18 @@ body {
 .code__description {
   background-color: #E2F3F9;
   color: #000000;
+  font-size: 1rem;
   text-align: start;
   box-shadow: 0 0 5px #e2f3f9;
   overflow: auto;
+  position: relative;
+  height: 300px;
 }
+.code__description code {
+  position: absolute;
+  box-sizing: border-box;
+}
+
 .contacts__main li {
   display: flex;
   flex-direction: row;

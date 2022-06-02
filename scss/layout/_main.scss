@@ -17,7 +17,7 @@
         text-align: end;
         border-bottom: 2px solid $text-color-light;
     }
-    width: 1280px;
+    width: 960px;
 }
 .column__left {
     position: relative;
@@ -41,11 +41,16 @@
 .code__description {
     background-color: $bg-color-light;
     color: $text-color-dark;
+    font-size: 1rem;
     text-align: start;
     box-shadow: 0 0 5px #e2f3f9;
     overflow: auto;
+    position: relative;
+    height: 300px;
     code {
-        // overflow: auto;
+        position: absolute;
+        box-sizing: border-box;
+        
     }
 }
 .contacts__main {

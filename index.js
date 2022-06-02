@@ -78,22 +78,25 @@ function showOverlay() {
     overlay.classList.add('overlay');
     overlay.addEventListener('click', showSlideMenu);
     document.body.prepend(overlay);
-    
+    document.body.classList.toggle('body_unscrolled');
   }
 }
 function showSlideMenu() {
-  hamburger.classList.toggle('hamburger_active');
-  hamburger.classList.toggle('hamburger_unactive');
+  HAMBURGER.classList.toggle('hamburger_active');
+  HAMBURGER.classList.toggle('hamburger_unactive');
   HEADER_NAVIGATION.classList.toggle('header__navigation_active');
   HEADER_NAVIGATION.classList.toggle('header__navigation_unactive');
-  document.body.classList.toggle('body_unscrolled');
   showOverlay();
 }
 
-const hamburger = document.querySelector('.hamburger');
+const HAMBURGER = document.querySelector('.hamburger');
 const HEADER_NAVIGATION = document.querySelector('.header__navigation');
 const NAVIGATION_LINKS = document.querySelectorAll('.nav__link');
 
-hamburger.addEventListener('click', showSlideMenu);
-NAVIGATION_LINKS.forEach(link => link.addEventListener('click', showSlideMenu));
+HAMBURGER.addEventListener('click', showSlideMenu);
 
+NAVIGATION_LINKS.forEach(link => link.addEventListener('click', () => {
+
+  screen.width < 640 ? showSlideMenu() : '';
+
+}));
