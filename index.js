@@ -78,7 +78,6 @@ function showOverlay() {
     overlay.classList.add('overlay');
     overlay.addEventListener('click', showSlideMenu);
     document.body.prepend(overlay);
-    document.body.classList.toggle('body_unscrolled');
   }
 }
 function showSlideMenu() {
@@ -87,6 +86,7 @@ function showSlideMenu() {
   HEADER_NAVIGATION.classList.toggle('header__navigation_active');
   HEADER_NAVIGATION.classList.toggle('header__navigation_unactive');
   showOverlay();
+  document.body.classList.toggle('body_unscrolled');
 }
 
 const HAMBURGER = document.querySelector('.hamburger');
@@ -97,6 +97,6 @@ HAMBURGER.addEventListener('click', showSlideMenu);
 
 NAVIGATION_LINKS.forEach(link => link.addEventListener('click', () => {
 
-  screen.width < 640 ? showSlideMenu() : '';
+  screen.width < 768 ? showSlideMenu() : '';
 
 }));
