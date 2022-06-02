@@ -11,9 +11,13 @@
         width: 320px;
     }
     .image-box {
+        margin: 20px 0;
         img {
-            right: 20px;
+            right: 0;
         }
+    }
+    .column__left {
+        width: 280px;
     }
     .column__left::before {
         display: none;
@@ -26,5 +30,13 @@
     }
     .image-box::before {
         display: none;
+    }
+    .hamburger__line {
+        background-color: $bg-color-dark;
+    }
+    .hamburger_active {
+        .hamburger__line {
+            background-color: $text-color-light;
+        }
     }
 }

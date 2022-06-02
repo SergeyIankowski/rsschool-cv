@@ -43,8 +43,9 @@
     color: $text-color-dark;
     text-align: start;
     box-shadow: 0 0 5px #e2f3f9;
+    overflow: auto;
     code {
-        overflow: auto;
+        // overflow: auto;
     }
 }
 .contacts__main {

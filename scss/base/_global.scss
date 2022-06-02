@@ -6,6 +6,10 @@ body {
     padding: 0;
     margin: 0;
 }
+.body_unscrolled {
+    height: 100%;
+    overflow: hidden;
+}
 .wrapper {
     width: 1280px;
     margin: 0 auto;

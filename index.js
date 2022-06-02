@@ -86,6 +86,7 @@ function showSlideMenu() {
   hamburger.classList.toggle('hamburger_unactive');
   HEADER_NAVIGATION.classList.toggle('header__navigation_active');
   HEADER_NAVIGATION.classList.toggle('header__navigation_unactive');
+  document.body.classList.toggle('body_unscrolled');
   showOverlay();
 }
 
