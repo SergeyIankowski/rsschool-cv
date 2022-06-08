@@ -10,159 +10,159 @@
 </head>
 
 <body>
-    <div class="info">
-        <header class="header">
-            <div class="image-box">
-                <img class="image-box-portrait" srcset="
+    <header class="header" id="nav">
+        <div class="wrapper">
+            <div class="header-container">
+                <nav class="navigation header__navigation header__navigation_unactive">
+                    <ul class="ul">
+                        <li><a class="link nav__link" href="#about-me-h2">ABOUT</a></li>
+                        <li><a class="link nav__link" href="#education-h2">EDUCATION</a></li>
+                        <li><a class="link nav__link" href="#code-h2">CODE</a></li>
+                        <li><a class="link nav__link" href="#languages-h2">LANGUAGES</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger hamburger_unactive">
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                    <div class="hamburger__line"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <div class="column column__left">
+                <section class="self-info">
+                    <figure class="image-box">
+                        <img class="image-box-portrait" srcset="
             images/Portrait_for_CV_200px.png 200w,
             images/Portrait_for_CV_250px.png 250w
             " sizes="
-            (max-width: 500px) 190px,
+            (max-width: 360px) 190px,
             240px" src="images/Portrait_for_CV_250px.png" alt="My CV Portrait" />
-            </div>
+                    </figure>
 
-            <h1 class="header-description" id="header-description-h1"><span id="sergei">SERGEY</span><span
-                    id="iankowski">IANKOWSKI</span></h1>
-            <p id="profession">Junior Front-end web developer</p>
-            <section class="contacts">
-                <h2 class="header-description" id="contacts-h2">CONTACTS</h2>
+                    <h1 class="self-info__header" id="header-description-h1"><span id="sergei">SERGEY</span><span
+                            id="iankowski"> IANKOWSKI</span></h1>
+                    <p id="self-info__profession">Front-end web developer</p>
+                </section>
+                <section class="contacts">
+                    <h2 class="contacts__header h2" id="contacts-h2">CONTACTS</h2>
 
-                <ul class="header-description" id="contacts-main">
-                    <li>
-                        <img src="icons/icon-location.svg" alt="">
-                        <p>Minsk, Belarus</p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-phone.svg" alt="phone icon">
-                        <p>+37297749222</p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-email.svg" alt="location icon">
-                        <p>sergeyiankowski@gmail.com</p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-discord.svg" alt="discord icon">
-                        <p>Garret#2389</p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-telegram.svg" alt="telegram icon">
-                        <p>@Garret933</p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-github.svg" alt="github icon">
-                        <p><a href="https://github.com/sergeyIankowski">My Github</a></p>
-                    </li>
-                    <li>
-                        <img src="icons/icon-linkedin.svg" alt="linkedin icon">
-                        <p><a href="https://www.linkedin.com/in/sergeyiankowski/">LinkedIn</a></p>
-                    </li>
-                </ul>
-            </section>
-            <section class="skills">
-                <h2 class="header-description" id="skills-h2">SKILLS</h2>
-
-                <ul class="header-description" id="skills-main">
-                    <li>
-                        <p>HTML5</p>
-                        <div>
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                        </div>
-                    </li>
-                    <li>
-                        <p>CSS</p>
-                        <div>
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                        </div>
-                    </li>
-                    <li>
-                        <p>Git, GitHub</p>
-                        <div>
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                        </div>
-                    </li>
-                    <li>
-                        <p>JavaScript</p>
-                        <div>
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
-                        </div>
-                    </li>
-                    <li>
-                        <p>VS Code</p>
-                        <div>
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </header>
-
-        <main class="main">
-            <aside class="main-description" id="nav">
-                <nav>
-                    <ul>
-                        <li><a href="#about-me-h2">ABOUT</a></li>
-                        <li><a href="#education-h2">EDUCATION</a></li>
-                        <li><a href="#code-h2">CODE</a></li>
-                        <li><a href="#languages-h2">LANGUAGES</a></li>
+                    <ul class="header-description ul contacts__main flex-list" id="contacts-main">
+                        <li>
+                            <img src="icons/icon-location.svg" alt="">
+                            <p>Minsk, Belarus</p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-phone.svg" alt="phone icon">
+                            <p>+37297749222</p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-email.svg" alt="location icon">
+                            <p><a class="link" href="mailto:sergeyiankowski@gmail.com"
+                                    title="sergeyiankowski@gmail.com">My Email</a></p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-discord.svg" alt="discord icon">
+                            <p>Garret#2389</p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-telegram.svg" alt="telegram icon">
+                            <p>@Garret933</p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-github.svg" alt="github icon">
+                            <p><a class="link" href="https://github.com/sergeyIankowski">My Github</a></p>
+                        </li>
+                        <li>
+                            <img src="icons/icon-linkedin.svg" alt="linkedin icon">
+                            <p><a class="link" href="https://www.linkedin.com/in/sergeyiankowski/">LinkedIn</a></p>
+                        </li>
                     </ul>
-                </nav>
-            </aside>
+                </section>
+                <section class="skills">
+                    <h2 class="h2 skills__head" id="skills-h2">SKILLS</h2>
 
-            <section>
-                <h2 class="main-description" id="about-me-h2">ABOUT</h2>
+                    <ul class="skills__list ul flex-list" id="skills-main">
+                        <li>
+                            HTML5
+                            <!-- <div>
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                        </div> -->
+                        </li>
+                        <li>
+                            CSS, SASS
+                            <!-- <div>
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                        </div> -->
+                        </li>
+                        <li>
+                            Git, GitHub
+                            <!-- <div>
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                        </div> -->
+                        </li>
+                        <li>
+                            JavaScript ES6, React(in progress...)
+                            <!-- <div>
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-empty.svg" alt="icon circle">
+                        </div> -->
+                        </li>
+                        <li>
+                            VS Code
+                            <!-- <div>
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                            <img src="icons/icon-circle-not-empty.svg" alt="icon circle">
+                        </div> -->
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="column column__right">
+                <section class="about-me">
+                    <h2 class="h2 about-me__head" id="about-me-h2">ABOUT</h2>
 
-                <p class="main-description" id="about-me-main">I have good interpersonal skills and am good
-                    working in group. I like learn and
-                    discover new engineering
-                    solutions. I worked as a civil engineer last 5 years. I realized that I wanted to find a new field
-                    of work.
-                    Front-end development has become interesting to me. My goal is to progress and work in Front-End
-                    development
-                    direction.</p>
-            </section>
-            <section>
-                <h2 class="main-description" id="education-h2">EDUCATION</h2>
+                    <p class="about-me__description" id="about-me-main"></p>
+                </section>
+                <section class="education">
+                    <h2 class="h2 education__head" id="education-h2">EDUCATION</h2>
 
-                <ul class="main-description" id="education-main">
-                    <li>
-                        <p class="date"><time datetime="2022-27">February 2022</time> - <time datetime="2022-03">May 2022</time></p>
-                        <p class="description">Programming in Front-End JavaScript Stage#0 courses<br> at the Rolling
-                            Scopes online school</p>
-                    </li>
-                    <li>
-                        <p class="date"><time datetime="2010">2010</time> - <time datetime="2015">2015</time></p>
-                        <p class="description">Minsk, Belarusian National Technical University,<br>Civil engineering
-                            Faculty,<br>Industrial and
-                            civil
-                            construction</p>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2 class="main-description" id="code-h2">CODE</h2>
+                    <ul class="education__list ul" id="education-main">
+                        <li>
+                            <p class="date"></p>
+                        </li>
+                        <li>
+                            <p class="date"></p>
+                        </li>
+                    </ul>
+                </section>
+                <section class="code">
+                    <h2 class="h2 code__head" id="code-h2">CODE</h2>
 
-                <pre class="main-description" id="code-main"><code>let age = +prompt(&quot;Enter your age!&quot;);
-let checkAge = value =&gt; {
+                    <pre class="code__description" id="code-main"><code>const age = +prompt(&quot;Enter your age!&quot;);
+const checkAge = value =&gt; {
     if (value &lt; 18) {
 
         return false
@@ -172,32 +172,30 @@ let checkAge = value =&gt; {
         return true
     }
 };
-let messege = (checkAge(age)) ? &quot;access is allowed&quot; : &quot;Access denied&quot;;
+let messege = checkAge(age) ? &quot;access is allowed&quot; : &quot;Access denied&quot;;
 alert(messege);
 </code></pre>
-            </section>
-            <section>
-                <h2 class="main-description" id="languages-h2">LANGUAGES</h2>
 
-                <ul class="main-description" id="languades-main">
-                    <li>
-                        <p>Russian - Native speaker</p>
-                    </li>
-                    <li>
-                        <p>English - A1 (in progress...)</p>
-                    </li>
-                    <li>
-                        <p>German (B1)</p>
-                    </li>
-                </ul>
-            </section>
-        </main>
-    </div>
-    <footer>
-        <p>&#xa9; 2022 Iankowski Sergei</p>
-        <p><a href="https://github.com/sergeyIankowski">My Github</a></p>
-<p><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="Rolling scopes school logo"></a></p>
+                </section>
+                <section class="languages">
+                    <h2 class="h2 languages__head" id="languages-h2">LANGUAGES</h2>
+
+                    <ul class="languages__list ul" id="languades-main"></ul>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-container">
+                <p>&#xa9; 2022 Iankowski Sergei</p>
+                <p><a class="link link_dark" href="https://github.com/sergeyIankowski">My Github</a></p>
+                <p><a href="https://rs.school/js/"><img class="rss-logo" src="https://rs.school/images/rs_school_js.svg"
+                            alt="Rolling scopes school logo"></a></p>
+            </div>
+        </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
