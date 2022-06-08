@@ -1,0 +1,15 @@
+.footer {
+    font-size: 1.3rem;
+}
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bg-color-light;
+    padding: 0 20px;
+}
+.rss-logo {
+    width: 200px;
+    height: auto;
+}
