@@ -1,14 +1,5 @@
 const cvData = {
-  aboutMeText: `Hi! I am Front-End web developer. I want to
-  upgrade my skills. I have good interpersonal skills and am good
-  working in group. I like learn and
-  discover new engineering
-  solutions. I worked as a civil engineer last 5 years. I realized that I wanted to find a new
-  field
-  of work.
-  Front-end development has become interesting to me. My goal is to progress and work in Front-End
-  development
-  direction.`,
+  aboutMeText: `I am a Front-End developer with a focus on React. I have been working and learning for one year. My high motivation is based on my interest in this sphere of development. I communicate well in a team and enjoy interacting with other people. I am able to make decisions and take responsibility for them. I like to learn new things and solve difficult problems.`,
   datesOfEducation: [
     [`June 2022 - August 2022`, `Programming in Front-End JavaScript Stage#0 courses`, `at the
       Rolling Scopes online school`],
