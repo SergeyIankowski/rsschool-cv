@@ -1,0 +1,10 @@
+@media (max-width: 1279px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
