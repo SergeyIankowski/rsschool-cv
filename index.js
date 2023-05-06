@@ -128,7 +128,7 @@ const createPopup = (
 
   const closeIcon = document.createElement("img");
   closeIcon.classList.add("popup__close-icon");
-  closeIcon.src = "/icons/icon-close.svg";
+  closeIcon.src = "icons/icon-close.svg";
 
   const popupTitle = document.createElement("h3");
   popupTitle.classList.add("popup-board__title");
