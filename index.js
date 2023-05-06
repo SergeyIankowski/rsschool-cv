@@ -215,7 +215,7 @@ const createProjectsItem = ({
 const projectsData = [
   {
     projectName: "Todo-List App",
-    imgPath: "/images/projects/todo-app.jpg",
+    imgPath: "images/projects/todo-app.jpg",
     link: "https://github.com/SergeyIankowski/clever-todo-list/tree/feat/todo-app",
     description:
       "Simple Todo App based on Firebase. App uses firebase-hooks and syncronize in real time with another devices. When you change your todos on one device, changes occur on all devices in real time.",
@@ -225,7 +225,7 @@ const projectsData = [
   },
   {
     projectName: "Mini Paint App",
-    imgPath: "/images/projects/mini-paint.jpg",
+    imgPath: "images/projects/mini-paint.jpg",
     link: "https://github.com/SergeyIankowski/mini-paint/tree/feat/paint",
     description:
       "Mini Paint App based on webpack. You can draw pictures and saves to best pictures. Theme changing, sorting and deleting pictures are implemented. You can delete only your pictures.",
@@ -235,7 +235,7 @@ const projectsData = [
   },
   {
     projectName: "Calculator App",
-    imgPath: "/images/projects/calculator.jpg",
+    imgPath: "images/projects/calculator.jpg",
     link: "https://github.com/SergeyIankowski/vanilla-js-calculator",
     description:
       "JavaScript Calculator maked with Command Programming Pattern. Implemented theme managment with saving in LocalStorage. M+, M-, MC, MR uses also LocalStorage. All Math functions are implemented without other Libraries or Math js object.",
@@ -244,7 +244,7 @@ const projectsData = [
   },
   {
     projectName: "Online Zoo",
-    imgPath: "/images/projects/online-zoo.jpg",
+    imgPath: "images/projects/online-zoo.jpg",
     link: "https://github.com/SergeyIankowski/online-zoo",
     description:
       "HTML, SCSS markup project with using Vanilla JavaScript. Implemented two pages About and Donate. Implemented sliders, popups and hamburger slide menu.",
@@ -253,7 +253,7 @@ const projectsData = [
   },
   {
     projectName: "CSS Meme Slider",
-    imgPath: "/images/projects/css-meme-slider.jpg",
+    imgPath: "images/projects/css-meme-slider.jpg",
     link: "https://github.com/SergeyIankowski/cssMemeSlider",
     description: "Trying to make slider without JavaScript",
     technologies: "HTML, SCSS",
