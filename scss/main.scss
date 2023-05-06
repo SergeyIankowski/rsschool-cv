@@ -1,9 +1,17 @@
 @import "abstracts/variables";
 @import "abstracts/animations";
+
 @import "base/global";
 @import "base/fonts";
+
+@import "components/hamburger";
+@import "components/project-image";
+@import "components/project-present";
+@import "components/popup";
+
 @import "layout/header";
 @import "layout/main";
+@import "layout/projects-board-layout";
 @import "layout/footer";
 @import "layout-media/tablet";
 @import "layout-media/phone";

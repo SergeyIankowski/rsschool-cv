@@ -1,0 +1,20 @@
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 7px;
+  z-index: 5;
+}
+.hamburger__line {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: $text-color-light;
+}
+.hamburger_active {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.hamburger_unactive {
+  transform: rotate(0deg);
+  transition: 0.5s;
+}

@@ -1,34 +1,20 @@
 .header {
-    font-size: 1.3rem;
-    .wrapper {
-        position: relative;
-    }
-    
+  font-size: 1.3rem;
+  .wrapper {
+    position: relative;
+  }
 }
 .header-container {
-    position: absolute;
-    top: 30px;
-    right: 20px;
+  position: absolute;
+  top: 30px;
+  right: 20px;
 }
 .header__navigation {
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        justify-content: flex-end;
-        margin: 0;
-    }
-}
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 7px;
-    z-index: 5;
-    
-}
-.hamburger__line {
-    display: block;
-    width: 35px;
-    height: 3px;
-    background-color: $text-color-light;
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 0;
+  }
 }

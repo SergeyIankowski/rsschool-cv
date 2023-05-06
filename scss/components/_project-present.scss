@@ -1,0 +1,9 @@
+.project-present-item {
+  width: 200px;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 5px 5px 2px $bg-color-light;
+    transform: scale(110%);
+    transition: 0.5s;
+  }
+}

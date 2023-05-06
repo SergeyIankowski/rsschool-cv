@@ -1,4 +1,3 @@
-
 # Task name is RSSchool-cv.
 
 It's CV project at the Rolling Scopes School.
