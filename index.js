@@ -1,5 +1,5 @@
 const cvData = {
-  aboutMeText: `I am a Front-End developer with a focus on React. I have been working and learning for one year. My high motivation is based on my interest in this sphere of development. I communicate well in a team and enjoy interacting with other people. I am able to make decisions and take responsibility for them. I like to learn new things and solve difficult problems.`,
+  aboutMeText: `I am a Front-End developer with a focus on React. I am worked with React for six months, with JavaScript 1,5 year. My high motivation is based on my interest in this sphere of development. I communicate well in a team and enjoy interacting with other people. I am able to make decisions and take responsibility for them. I like to learn new things and solve difficult problems.`,
   datesOfEducation: [
     [
       `September 2022 - February 2023`,
@@ -77,6 +77,8 @@ LANGUAGES_TEXT.forEach((text) => {
   writeTextInTag(node, text);
 });
 
+//hamburger functionality
+
 const HAMBURGER = document.querySelector(".hamburger");
 const HEADER_NAVIGATION = document.querySelector(".header__navigation");
 const NAVIGATION_LINKS = document.querySelectorAll(".nav__link");
@@ -86,7 +88,7 @@ function showOverlay() {
   } else {
     const overlay = document.createElement("div");
     overlay.classList.add("overlay");
-    overlay.addEventListener("click", showSlideMenu);
+    overlay.addEventListener("click", showHideSlideMenu);
     document.body.prepend(overlay);
   }
 }
@@ -101,7 +103,9 @@ function showHideSlideMenu() {
 HAMBURGER.addEventListener("click", showHideSlideMenu);
 NAVIGATION_LINKS.forEach((link) =>
   link.addEventListener("click", () => {
-    screen.width < 768 ? showSlideMenu() : "";
+    if (screen.width < 868) {
+      showHideSlideMenu();
+    }
   })
 );
 
@@ -216,7 +220,7 @@ const projectsData = [
     description:
       "Simple Todo App based on Firebase. App uses firebase-hooks and syncronize in real time with another devices. When you change your todos on one device, changes occur on all devices in real time.",
     technologies:
-      "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase",
+      "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase, SCSS",
     deploy: "https://clever-todo-list-innowise.netlify.app/",
   },
   {
@@ -226,19 +230,35 @@ const projectsData = [
     description:
       "Mini Paint App based on webpack. You can draw pictures and saves to best pictures. Theme changing, sorting and deleting pictures are implemented. You can delete only your pictures.",
     technologies:
-      "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase, Canvas",
+      "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase, SCSS, Canvas",
     deploy: "https://startling-fairy-f0270e.netlify.app/paint-board",
   },
   {
     projectName: "Calculator App",
-    imgPath: "/images/projects/mini-paint.jpg",
-    link: "https://github.com/SergeyIankowski/mini-paint/tree/feat/paint",
+    imgPath: "/images/projects/calculator.jpg",
+    link: "https://github.com/SergeyIankowski/vanilla-js-calculator",
     description:
-      "Mini Paint App based on webpack. You can draw pictures and saves to best pictures. Theme changing, sorting and deleting pictures are implemented. You can delete only your pictures.",
-    technologies:
-      "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase, Canvas",
-    deploy: "https://startling-fairy-f0270e.netlify.app/paint-board",
-  }
+      "JavaScript Calculator maked with Command Programming Pattern. Implemented theme managment with saving in LocalStorage. M+, M-, MC, MR uses also LocalStorage. All Math functions are implemented without other Libraries or Math js object.",
+    technologies: "JavaScript, Webpack",
+    deploy: "https://chic-lily-7c102a.netlify.app/",
+  },
+  {
+    projectName: "Online Zoo",
+    imgPath: "/images/projects/online-zoo.jpg",
+    link: "https://github.com/SergeyIankowski/online-zoo",
+    description:
+      "HTML, SCSS markup project with using Vanilla JavaScript. Implemented two pages About and Donate. Implemented sliders, popups and hamburger slide menu.",
+    technologies: "HTML, SCSS, JavaScript, Webpack",
+    deploy: "https://sergeyiankowski.github.io/online-zoo/dist/main.html",
+  },
+  {
+    projectName: "CSS Meme Slider",
+    imgPath: "/images/projects/css-meme-slider.jpg",
+    link: "https://github.com/SergeyIankowski/cssMemeSlider",
+    description: "Trying to make slider without JavaScript",
+    technologies: "HTML, SCSS",
+    deploy: "https://sergeyiankowski.github.io/cssMemeSlider/",
+  },
 ];
 
 const PROJECTS_BOARD = document.querySelector(".projects-board-layout");
