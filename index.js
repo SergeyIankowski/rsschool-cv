@@ -18,7 +18,7 @@ const cvData = {
   ],
   languages: [
     `Russian - Native speaker`,
-    `English - A1 (in progress...)`,
+    `English - A2 (in progress...)`,
     `German - B1 (in progress...)`,
   ],
 };
@@ -228,7 +228,7 @@ const projectsData = [
     imgPath: "images/projects/mini-paint.jpg",
     link: "https://github.com/SergeyIankowski/mini-paint/tree/feat/paint",
     description:
-      "Mini Paint App based on webpack. You can draw pictures and saves to best pictures. Theme changing, sorting and deleting pictures are implemented. You can delete only your pictures.",
+      "Mini Paint App based on webpack. You can draw pictures and saves to best pictures. Theme changing, sorting and deleting pictures are implemented. You can delete only your pictures. Implemented drawing of complex shapes",
     technologies:
       "Typescript, Webpack, React, Redux/toolkit, Redux/thunk, Firebase, SCSS, Canvas",
     deploy: "https://startling-fairy-f0270e.netlify.app/paint-board",
