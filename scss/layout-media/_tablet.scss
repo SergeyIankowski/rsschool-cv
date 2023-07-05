@@ -1,0 +1,40 @@
+@media (max-width: 867px) {
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .header-container {
+    top: 0;
+    right: 0;
+    z-index: 4;
+  }
+  .header__navigation {
+    position: absolute;
+    background-color: $bg-color-dark;
+    padding: 30px 0;
+    width: 320px;
+    height: 100vh;
+
+    ul {
+      font-size: 1.5rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+  .header__navigation_unactive {
+    display: none;
+    top: 0;
+    right: -320px;
+    transition: 1s;
+  }
+  .header__navigation_active {
+    display: block;
+    top: 0;
+    right: 0;
+    transition: 1s;
+  }
+}

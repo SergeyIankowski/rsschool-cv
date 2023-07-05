@@ -1,0 +1,127 @@
+.main {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  font-size: 1.1rem;
+}
+.column__right {
+  text-align: justify;
+
+  padding: 40px 20px 20px 50px;
+
+  background-color: $bg-color-dark;
+  color: $text-color-light;
+
+  h2 {
+    text-align: end;
+    border-bottom: 2px solid $text-color-light;
+  }
+  width: 960px;
+}
+.column__left {
+  position: relative;
+  padding: 20px;
+  background-color: $bg-color-light;
+  text-align: center;
+  width: 320px;
+}
+.column__left::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 320px solid $bg-color-dark;
+  border-bottom: 320px solid transparent;
+}
+.code__description {
+  background-color: $bg-color-light;
+  color: $text-color-dark;
+  font-size: 1rem;
+  text-align: start;
+  box-shadow: 0 0 5px #e2f3f9;
+  overflow: auto;
+  position: relative;
+  height: 300px;
+  code {
+    position: absolute;
+    box-sizing: border-box;
+  }
+}
+.contacts__main {
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    p {
+      margin: 0;
+    }
+    a {
+      color: $text-color-dark;
+    }
+  }
+}
+.flex-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+.image-box {
+  position: relative;
+  margin: 20px;
+  img {
+    z-index: 2;
+    position: relative;
+    top: 30px;
+    right: 30px;
+  }
+}
+.image-box::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  border-left: 115px solid $bg-color-light;
+  border-top: 115px solid transparent;
+  z-index: 3;
+}
+.image-box::before {
+  content: "";
+  display: block;
+  width: 240px;
+  height: 310px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #438797;
+  z-index: 1;
+}
+.self-info__header {
+  margin-top: 50px;
+}
+.education__description {
+  margin: 0;
+}
+.languages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#skills-main {
+  align-items: flex-end;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+}

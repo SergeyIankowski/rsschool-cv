@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="#26e07f"
+   viewBox="0 0 35.999962 24.743698"
+   width="35.999962"
+   height="24.743698"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="icon-telegram.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="10"
+     fit-margin-bottom="1"
+     inkscape:zoom="12.48"
+     inkscape:cx="-6.4102564"
+     inkscape:cy="19.911859"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     d="M 25.527873,1.3126595 C 25.101427,0.95103348 24.431623,0.89929141 23.739076,1.177334 h -0.0011 c -0.72837,0.2922575 -20.6177967,8.823445 -21.4274749,9.171993 -0.1472659,0.05117 -1.43342607,0.531067 -1.3009437,1.600024 0.1182677,0.963768 1.151972,1.362921 1.2781999,1.408977 l 5.056509,1.73137 c 0.3354703,1.116719 1.572163,5.236753 1.8456568,6.116937 0.1705778,0.548693 0.4486211,1.269671 0.9359059,1.418074 0.427583,0.164892 0.852892,0.01421 1.128091,-0.201852 l 3.091447,-2.86742 4.990551,3.892027 0.118837,0.07107 c 0.338882,0.150109 0.66355,0.225164 0.973433,0.225164 0.239379,0 0.469091,-0.04492 0.688568,-0.134757 0.747701,-0.307041 1.046782,-1.01949 1.078055,-1.10023 L 25.922477,3.1327297 C 26.149915,2.0978881 25.833777,1.5713699 25.527873,1.3126595 Z M 11.803714,15.782245 10.097931,20.330999 8.3921485,14.645057 21.469816,4.978955 Z"
+     id="path2"
+     style="fill:#008000;stroke-width:0.568594" />
+</svg>

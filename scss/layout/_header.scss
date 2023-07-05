@@ -1,0 +1,20 @@
+.header {
+  font-size: 1.3rem;
+  .wrapper {
+    position: relative;
+  }
+}
+.header-container {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.header__navigation {
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    margin: 0;
+  }
+}
